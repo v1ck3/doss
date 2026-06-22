@@ -18,9 +18,9 @@ def send_packet(domain):
 def stress_test(domain):
     while True:
         try:
-            if threading.active_count() <= 15000:   # Limit the number of active threads to 15000
+            if threading.active_count() = 15000:   # Limit the number of active threads to 15000
                 send_packet(domain)                 # If not sending packets, this function will create a new one
-            time.sleep(1)                            # Sleep for 1 second before checking again
+            time.sleep(0)                            # Sleep for 1 second before checking again
         except KeyboardInterrupt:                    # Handle keyboard interrupts (Ctrl+C)
             break
 
